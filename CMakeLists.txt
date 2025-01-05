@@ -8,15 +8,14 @@ include(FetchContent)
 
 set(RAYLIB_VERSION 5.5)
 
-if (MINGW)
+if(MINGW)
     FetchContent_Declare(
         raylib
         URL https://github.com/raysan5/raylib/releases/download/${RAYLIB_VERSION}/raylib-${RAYLIB_VERSION}_win64_mingw-w64.zip
         FIND_PACKAGE_ARGS ${RAYLIB_VERSION}
 )
-endif()
 
-if (WIN32 AND MINGW)
+elseif(WIN32 AND MINGW)
     FetchContent_Declare(
         raylib
         URL https://github.com/raysan5/raylib/releases/download/${RAYLIB_VERSION}/raylib-${RAYLIB_VERSION}_win32_mingw-w64.zip
@@ -39,16 +38,16 @@ FetchContent_MakeAvailable(raylib)
 
 add_executable(${PROJECT_NAME}
     src/main.cpp
-    src/player.cpp
-    src/menu.cpp
-    src/camera.cpp
-    src/entity.cpp
-    src/weapon.cpp
-    src/player.h
-    src/camera.h
-    src/menu.h
-    src/entity.h
-    src/weapon.h
+#    src/player.cpp
+#    src/menu.cpp
+#    src/camera.cpp
+#    src/entity.cpp
+#    src/weapon.cpp
+#    src/player.h
+#    src/camera.h
+#    src/menu.h
+#    src/entity.h
+#    src/weapon.h
     )
 
 
