@@ -38,15 +38,18 @@ FetchContent_MakeAvailable(raylib)
 
 add_executable(${PROJECT_NAME}
     src/main.cpp
-#    src/player.cpp
-#    src/menu.cpp
-#    src/camera.cpp
-#    src/entity.cpp
-#    src/weapon.cpp
-#    src/player.h
-#    src/camera.h
-#    src/menu.h
-#    src/entity.h
+
+    src/texture.hpp src/texture.cpp
+    src/entity.hpp src/entity.cpp
+    src/input.hpp src/input.cpp
+    src/weapon.hpp
+
+
+
+
+
+
+
 #    src/weapon.h
     )
 
