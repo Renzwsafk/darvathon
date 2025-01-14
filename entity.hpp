@@ -5,8 +5,7 @@
 
 class entity
 {
-public:
-    entity(float x, float y, float width, float height, int speed, int health, Color color);
+public:
     void draw();
     Rectangle id;
     float x, y;
