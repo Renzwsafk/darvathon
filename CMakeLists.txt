@@ -42,7 +42,13 @@ add_executable(${PROJECT_NAME}
     src/texture.hpp src/texture.cpp
     src/entity.hpp src/entity.cpp
     src/input.hpp src/input.cpp
-    src/weapon.hpp
+    src/player.cpp src/player.hpp
+    src/ui.hpp src/ui.cpp
+    src/game.hpp src/game.cpp
+
+
+
+
 
 
 
